@@ -1,0 +1,37 @@
+$theme-color: #007932;
+$button-height: 26px;
+
+body{font-family: 'Poppins', sans-serif;}
+
+
+.button{
+    padding:0 15px; height: $button-height; line-height:calc(#{$button-height} - 4px); border-radius:calc(#{$button-height} / 2);font-size:14px; list-style-type:none; margin-left:15px; margin-top:calc((80px - #{$button-height}) / 2); text-transform: uppercase;
+    border:2px solid $theme-color;
+    &:hover{
+        background-color:$theme-color; 
+        a{color:white !important}
+    }
+}
+
+.nav{
+    height:80px; border-bottom:2px solid black;
+
+    .logo{
+        margin-top:17px;
+        height: 46px;
+    }
+
+    &__list-container{
+        display:flex; flex-direction:row; justify-content: flex-end; margin:0;
+    }
+
+    &__list-item{
+        line-height:80px; list-style-type:none; padding:0 10px; font-size:14px; text-transform: uppercase;
+    }
+
+    a{color:black; display:block; transition: ease-in-out;}
+
+    a:hover{
+        color:$theme-color; transition: ease-in-out; 
+    }
+}
