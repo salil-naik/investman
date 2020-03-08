@@ -1,3 +1,7 @@
+/*
+product.css has classes similar to 'foundation by zurb'
+product.css is a toned down version of foundation css
+*/
 body, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
@@ -560,28 +564,34 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.button {
-  padding: 0 15px;
-  height: 26px;
-  line-height: calc(26px - 4px);
-  border-radius: calc(26px / 2);
-  font-size: 14px;
-  list-style-type: none;
-  margin-left: 15px;
-  margin-top: calc((80px - 26px) / 2);
-  text-transform: uppercase;
-  border: 2px solid #007932;
-}
-.button:hover {
-  background-color: #007932;
-}
-.button:hover a {
-  color: white !important;
+h2 {
+  font-weight: bold;
+  font-size: 30px;
 }
 
+.button {
+  padding: 0 18px;
+  font-size: 12px;
+  list-style-type: none;
+  text-transform: uppercase;
+  background-color: #007932;
+  margin-left: 15px;
+  margin-top: calc((80px - 28px) / 2);
+  border: 2px solid #007932;
+  height: 28px;
+  line-height: calc(28px - 4px);
+  border-radius: calc(28px / 2);
+}
+.button a {
+  color: white !important;
+}
 .nav {
   height: 80px;
-  border-bottom: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 .nav .logo {
   margin-top: 17px;
@@ -597,8 +607,9 @@ body {
   line-height: 80px;
   list-style-type: none;
   padding: 0 10px;
-  font-size: 14px;
+  font-size: 13px;
   text-transform: uppercase;
+  font-weight: 500;
 }
 .nav a {
   color: black;
@@ -608,4 +619,108 @@ body {
 .nav a:hover {
   color: #007932;
   transition: ease-in-out;
+}
+
+.hero {
+  height: 600px;
+  background-image: url("/images/money.jpg");
+  background-size: contain;
+}
+
+.why-section {
+  padding: 80px 0;
+}
+.why-section__logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.why-section__logo-container img {
+  width: 200px;
+}
+.why-section__text-container ul {
+  padding: 0;
+  margin: 0;
+}
+.why-section__key-points {
+  padding: 10px 0;
+  list-style-type: none;
+}
+
+.services {
+  background-color: #f1f1f1;
+  padding: 80px 0;
+}
+.services__title {
+  text-align: center;
+}
+.services__text {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.service__block {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 15px 0;
+}
+.service__icon {
+  display: block;
+  margin: auto;
+  width: 50px;
+  margin-bottom: 20px;
+}
+.service__title {
+  text-align: center;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.story {
+  padding: 80px 0;
+}
+.story__title {
+  margin-bottom: 30px;
+}
+.story__text {
+  max-width: 600px;
+}
+.story__text:first-of-type {
+  margin-bottom: 20px;
+}
+
+.founder {
+  max-width: 300px;
+  height: 350px;
+  background-image: url("/images/portrait.jpg");
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+.founder__name {
+  font-weight: 500;
+}
+.founder__position {
+  font-size: 14px;
+}
+.founder__twitter img {
+  width: 30px;
+  height: 30px;
+}
+.founder__details {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
