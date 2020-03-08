@@ -6,6 +6,8 @@
     <title>InvestMan</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- <link rel="stylesheet" href="/css/owl.carousel.min.css"> -->
 </head>
 <body>
     <div class="nav">
@@ -134,6 +136,66 @@
                  </div>
              </div>
          </div>
+
+         <div class="testimonial" id="testimonial">
+             <div class="grid-container">
+                 <div class="grid-x grid-margin-x">
+                    <div class="cell large-12">
+                        <h2 class="testimonial__title">Testimonial</h2>
+                    </div>
+                    <div class="cell large-12 feedback">
+                        <div class="cell large-12">
+                            <div class="feedback__block">
+                                <img src="images/icons/quote.png" class="feedback__icon">
+                                <p class="feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio totam dolorem voluptatum dolores beatae, placeat nostrum nam dolore minima blanditiis vel ullam quam ut consequuntur culpa possimus cumque reprehenderit molestiae.</p>
+                                <p class="feedback__person">Salil Naik<br><span>Founder, Letzcode</span></p>
+                            </div>
+                        </div>
+
+                        <div class="cell large-12">
+                            <div class="feedback__block">
+                                <img src="images/icons/quote.png" class="feedback__icon">
+                                <p class="feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio totam dolorem voluptatum dolores beatae, placeat nostrum nam dolore minima blanditiis vel ullam quam ut consequuntur culpa possimus cumque reprehenderit molestiae.</p>
+                                <p class="feedback__person">Salil Naik<br><span>Founder, Letzcode</span></p>
+                            </div>
+                        </div>
+                    </div>  
+                    <!-- <div class="feedback">
+                                            
+                    </div> -->
+                 </div>
+             </div>
+         </div>
+
+         <div class="newsletter">
+             <div class="grid-container">
+                 <div class="grid-x grid-margin-x">
+                     <div class="cell large-12">
+                         <div class="wrapper">
+                             <h2 class="newsletter__title">Subscribe to our newsletter</h2>
+                             <div class="form">
+                                 <form action="">
+                                     <input type="email" name="" id="" class="form__input" placeholder="hello@salilnaik.com">
+                                     <button type="submit" class="form__button">Subscribe</button>
+                                 </form>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- <script src="js/owl.carousel.min.js"></script> -->
+    <script>
+        $(document).ready(function(){
+        $('.feedback').slick({
+            slidesToShow: 1,
+            loop:true,
+            arrows:true,
+        });
+        });
+    </script>
 </body>
 </html>

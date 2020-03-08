@@ -1,4 +1,6 @@
 $theme-color: #007932;
+// $secondary-bg: rgba(255, 255, 255, 0.9);
+$secondary-bg: #ecf5fa;
 $button-height: 28px;
 
 body{font-family: 'Poppins', sans-serif;}
@@ -26,10 +28,6 @@ h2{
     height: $button-height; 
     line-height:calc(#{$button-height} - 4px); 
     border-radius:calc(#{$button-height} / 2);
-
-    &:hover{
-       
-    }
 }
 
 .nav{
@@ -88,7 +86,7 @@ h2{
 }
 
 .services{
-    background-color:#f1f1f1;
+    background-color:#ecf5fa;
     padding:80px 0;
     &__title{
         text-align:center;
@@ -109,6 +107,7 @@ h2{
         border-radius:10px; 
         padding:30px;
         margin:15px 0; 
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
     }
 
     &__icon{
@@ -138,12 +137,14 @@ h2{
 }
 
 .founder{
-    max-width:300px; 
+    width:300px; 
     height:350px; 
     background-image: url('/images/portrait.jpg');
     background-size:cover;
     color:white;
     position:relative;
+    border-radius:10px;
+    overflow:hidden;
 
     &__name{
         font-weight:500;
@@ -164,5 +165,95 @@ h2{
         bottom:0; left:0;
         display:flex; flex-direction:row; justify-content: space-between; align-items: center;
         padding:15px 20px; background-color:rgba(0, 0, 0, 0.2);
+    }
+}
+
+.testimonial{
+    background-color:$secondary-bg;
+    padding:80px 0;
+
+    &__title{
+        text-align: center; margin-bottom:30px;
+    }
+}
+
+.feedback{
+    &__block{
+        background-color:white; 
+        padding:30px; 
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+        width:600px;
+        border-radius:10px;
+        margin:auto;
+    }
+
+    &__icon{
+        display:block; margin:auto; width:30px;
+    }
+
+    &__text{
+        text-align:center; margin:15px 0;
+    }
+
+    &__person{
+        font-weight: 500;
+        text-align:center;
+        text-transform: uppercase;
+        span{
+            color:#555555; font-size:12px;
+        }
+    }
+}
+
+.slick-arrow{
+    font-size:12px; 
+    padding:10px 15px; 
+    background-color:$theme-color;
+    color:white;
+    border:0; outline:none;
+    border-radius:20px;
+    width:100px;
+    position:absolute;
+    top:50%; margin-top:-17px;
+    z-index:2;
+    cursor:pointer;
+
+    &.slick-prev{left:0;}
+    &.slick-next{right:0;}
+
+    &:hover{
+        background-color:black;
+    }
+}
+
+.newsletter{
+    padding:80px 0;
+    .wrapper{
+        display:flex; flex-direction:column;
+    }
+
+    &__title{
+        text-align:center; margin-bottom:30px;
+    }
+}
+
+.form{
+    margin:auto;
+    &__input{
+        height:34px; 
+        width:300px;
+        border-radius:17px; 
+        border:2px solid $theme-color; outline:none;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+        background-color:$secondary-bg;
+        padding:0px 20px; line-height:30px; font-size:16px;
+    }
+
+    &__button{
+        background-color:$theme-color; color:white; height:34px; border-radius:17px; outline:none; border:0; padding: 0 20px; cursor:pointer; margin-left:10px; text-transform: uppercase;
+
+        &:hover{
+            background-color:black
+        }
     }
 }
