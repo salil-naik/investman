@@ -830,14 +830,41 @@ h2 {
 
 .newsletter {
   padding: 40px;
-  margin: auto;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 .newsletter__title {
   text-align: center;
   margin-bottom: 30px;
+}
+
+.contact-form {
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+}
+.contact-form__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contact-form .input-container {
+  margin-bottom: 30px;
+}
+.contact-form .input-container label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+.contact-form .input-container .form__input {
+  width: 100%;
+}
+.contact-form .form__button {
+  margin-left: 0;
 }
 
 .form {
@@ -847,9 +874,9 @@ h2 {
   justify-content: center;
 }
 .form__input {
-  height: 34px;
+  height: 33px;
   width: 300px;
-  border-radius: 17px;
+  border-radius: 8px;
   border: 2px solid #007932;
   outline: none;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
@@ -857,6 +884,10 @@ h2 {
   padding: 0px 20px;
   line-height: 30px;
   font-size: 16px;
+}
+.form__input--textarea {
+  height: 150px;
+  padding: 5px 20px;
 }
 .form__button {
   background-color: #007932;
@@ -872,6 +903,13 @@ h2 {
 }
 .form__button:hover {
   background-color: black;
+}
+
+.grid {
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  grid-gap: 30px;
 }
 
 .footer {
@@ -892,9 +930,6 @@ h2 {
   z-index: -1;
 }
 
-.address {
-  padding: 80px 0;
-}
 .address__title {
   color: white;
 }
@@ -930,7 +965,7 @@ h2 {
 }
 
 .map {
-  padding: 80px 0;
+  padding: 0 0 30px 0;
 }
 .map iframe {
   width: 100%;
@@ -947,4 +982,24 @@ h2 {
 }
 .terms p {
   margin: 10px 0;
+}
+
+.wa-button {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  background-color: #1ebea5;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.wa-button svg {
+  width: 40px;
 }
