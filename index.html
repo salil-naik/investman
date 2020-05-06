@@ -53,11 +53,20 @@
         <div class="grid-container">
           <div class="grid-x grid-margin-x">
             <div class="cell large-6">
-              <div class="hero__heading-container">
-                <h2 class="hero__heading">
-                  Goal based financial planning and wealth creation provider
-                </h2>
-                <h2>Some other text</h2>
+              <div class="header-slider">
+                <div>
+                    <div class="hero__heading-container">
+                        <h2 class="hero__heading">
+                            Goal based financial planning and wealth creation provider
+                        </h2>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="hero__heading-container">
+                        <h2 class="hero__heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, accusamus?</h2>
+                    </div>
+                </div>
               </div>
             </div>
           </div>
@@ -469,6 +478,18 @@
           slidesToShow: 1,
           loop: true,
           arrows: true,
+        });
+
+        $(".header-slider").slick({
+          slidesToShow: 1,
+          loop: false,
+          arrows: false,
+          fade: true,
+          autoplay: true,
+          autoplaySpeed: 4000,
+          draggable: false,
+          pauseOnHover:false,
+          pauseOnFocus: false,
         });
       });
     </script>

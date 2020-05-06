@@ -647,8 +647,11 @@ h2 {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
 }
-.hero .grid-container, .hero .grid-x, .hero .cell {
+.hero .grid-container, .hero .grid-x, .hero .cell, .hero .header-slider, .hero .slick-track, .hero .slick-list {
   height: 100%;
+}
+.hero .header-slider {
+  z-index: 5;
 }
 .hero__heading-container {
   height: 100%;
