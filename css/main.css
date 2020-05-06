@@ -740,7 +740,7 @@ h2 {
 .founder {
   width: 300px;
   height: 350px;
-  background-image: url("/images/portrait.jpg");
+  background-image: url("/images/adhiraj-2.jpg");
   background-size: cover;
   color: white;
   position: relative;
@@ -767,7 +767,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .testimonial {
