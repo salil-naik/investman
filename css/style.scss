@@ -273,6 +273,33 @@ h2{
     }
 }
 
+.slick-dots{
+    padding:0; 
+    margin:auto;
+    margin-top:14px;
+    text-align: center;
+
+    li{
+        list-style-type: none;
+        display:inline-block;
+        margin:0 5px;
+
+        button{
+            width:40px; height:10px;
+            background-color: #bababa;
+            border-radius:5px;
+            border:0; outline:0; 
+            font-size:1px;
+        }
+
+        &.slick-active{
+            button{
+                background-color:$theme-color;
+            }
+        }
+    }
+}
+
 .newsletter{
     padding:40px;
     // margin:auto;
@@ -445,6 +472,9 @@ h2{
 }
 
 @media only screen and (max-width:1024px){
+    .grid-container{
+        padding:0 20px;
+    }
     h2{font-size:25px;}
     .nav{
         &__list-container{
@@ -470,6 +500,16 @@ h2{
         padding:40px 0;
     }
 
+    .service{
+        &__block{
+            min-height:170px;
+        }
+
+        &__title{
+            font-size:14px;
+        }
+    }
+
     .story{
         padding:40px 0;
 
@@ -483,7 +523,7 @@ h2{
     }
 
     .testimonial{
-        padding:40px 0;
+        padding:40px 0 25px 0;
     }
 
     .feedback{
@@ -494,12 +534,21 @@ h2{
 
     .grid{
         grid-template-columns: 1fr;
+        margin:30px 0 0 0;
     }
 
     .footer{
         padding:40px 0;
-        .terms{
-            font-size:12px; font-weight:light;
+    }
+
+    .terms{
+        padding:20px 0;
+    }
+
+    .form{
+        &__button{
+            margin:20px auto 0 auto;
+            display: block;
         }
     }
 }

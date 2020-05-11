@@ -134,7 +134,7 @@
               </p>
             </div>
 
-            <div class="cell large-4">
+            <div class="cell large-4 small-6">
               <div class="service__block">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -149,7 +149,7 @@
                 <h3 class="service__title">Wealth creation - Goal based</h3>
               </div>
             </div>
-            <div class="cell large-4">
+            <div class="cell large-4 small-6">
               <div class="service__block">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +163,7 @@
                 <h3 class="service__title">Retirement Planning</h3>
               </div>
             </div>
-            <div class="cell large-4">
+            <div class="cell large-4 small-6">
               <div class="service__block">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -177,7 +177,7 @@
                 <h3 class="service__title">Tax planning</h3>
               </div>
             </div>
-            <div class="cell large-4">
+            <div class="cell large-4 small-6">
               <div class="service__block">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -191,7 +191,7 @@
                 <h3 class="service__title">risk management</h3>
               </div>
             </div>
-            <div class="cell large-4">
+            <div class="cell large-4 small-6">
               <div class="service__block">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -205,7 +205,7 @@
                 <h3 class="service__title">emergency planning</h3>
               </div>
             </div>
-            <div class="cell large-4">
+            <div class="cell large-4 small-6">
               <div class="service__block">
                 <svg
                   class="service__icon"
@@ -538,6 +538,17 @@
           slidesToShow: 1,
           loop: true,
           arrows: true,
+          dots: true,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                autoplay: true,
+                autoplaySpeed: 4000,
+                arrows: false,
+              }
+            }
+          ]
         });
 
         $(".header-slider").slick({

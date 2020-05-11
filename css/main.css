@@ -840,6 +840,30 @@ h2 {
   background-color: black;
 }
 
+.slick-dots {
+  padding: 0;
+  margin: auto;
+  margin-top: 14px;
+  text-align: center;
+}
+.slick-dots li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 5px;
+}
+.slick-dots li button {
+  width: 40px;
+  height: 10px;
+  background-color: #bababa;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  font-size: 1px;
+}
+.slick-dots li.slick-active button {
+  background-color: #007932;
+}
+
 .newsletter {
   padding: 40px;
   background-color: white;
@@ -1017,6 +1041,10 @@ h2 {
 }
 
 @media only screen and (max-width: 1024px) {
+  .grid-container {
+    padding: 0 20px;
+  }
+
   h2 {
     font-size: 25px;
   }
@@ -1040,6 +1068,13 @@ h2 {
     padding: 40px 0;
   }
 
+  .service__block {
+    min-height: 170px;
+  }
+  .service__title {
+    font-size: 14px;
+  }
+
   .story {
     padding: 40px 0;
   }
@@ -1053,7 +1088,7 @@ h2 {
   }
 
   .testimonial {
-    padding: 40px 0;
+    padding: 40px 0 25px 0;
   }
 
   .feedback__block {
@@ -1062,13 +1097,19 @@ h2 {
 
   .grid {
     grid-template-columns: 1fr;
+    margin: 30px 0 0 0;
   }
 
   .footer {
     padding: 40px 0;
   }
-  .footer .terms {
-    font-size: 12px;
-    font-weight: light;
+
+  .terms {
+    padding: 20px 0;
+  }
+
+  .form__button {
+    margin: 20px auto 0 auto;
+    display: block;
   }
 }
