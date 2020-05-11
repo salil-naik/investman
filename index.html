@@ -19,22 +19,18 @@
         <div class="grid-x grid-margin-x">
           <div class="cell large-3">
             <img src="images/logo.png" alt="InvestMan logo" class="logo" />
-            <svg onclick="openMenu()" class="nav__menu" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><path d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"/></svg>
+            <svg onclick="toggleMenu()" class="nav__menu" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><path d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"/></svg>
           </div>
           <div class="cell large-9">
             <ul class="nav__list-container">
-              <li class="nav__list-item">
-                <a href="#why-investman">Why InvestMan</a>
-              </li>
-              <li class="nav__list-item"><a href="#services">Services</a></li>
-              <li class="nav__list-item"><a href="#story">About Us</a></li>
-              <li class="nav__list-item"><a href="#contact">Contact Us</a></li>
-              <li class="nav__list-item"><a href="https://medium.com/@adhiraj_52616">Blog</a></li>
+              <li class="nav__list-item" onclick="toggleMenu()"><a href="#why-investman">Why InvestMan</a></li>
+              <li class="nav__list-item" onclick="toggleMenu()"><a href="#services">Services</a></li>
+              <li class="nav__list-item" onclick="toggleMenu()"><a href="#story">About Us</a></li>
+              <li class="nav__list-item" onclick="toggleMenu()"><a href="#contact">Contact Us</a></li>
+              <li class="nav__list-item" onclick="toggleMenu()"><a href="https://medium.com/@adhiraj_52616">Blog</a></li>
               <!-- <li class="button"><a href="">Client Login</a></li> -->
               <li class="nav__list-item" style="text-decoration: underline;">
-                <a href="https://investman.investwell.app/app/#/login"
-                  >Client Login</a
-                >
+                <a href="https://investman.investwell.app/app/#/login">Client Login</a>
               </li>
               <li class="button">
                 <a
@@ -552,7 +548,7 @@
         });
       });
 
-      function openMenu(){
+      function toggleMenu(){
         let menu = document.getElementsByClassName('nav__list-container')[0];
         let display = menu.style.display;
         if(display == 'block'){
