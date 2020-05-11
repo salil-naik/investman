@@ -1015,3 +1015,60 @@ h2 {
 .wa-button svg {
   width: 40px;
 }
+
+@media only screen and (max-width: 1024px) {
+  h2 {
+    font-size: 25px;
+  }
+
+  .nav__list-container {
+    display: none;
+  }
+
+  .hero__heading {
+    font-size: 30px;
+  }
+
+  .why-section {
+    padding: 40px 0;
+  }
+  .why-section__logo-container {
+    display: none;
+  }
+
+  .services {
+    padding: 40px 0;
+  }
+
+  .story {
+    padding: 40px 0;
+  }
+  .story__title {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .founder {
+    margin: auto;
+  }
+
+  .testimonial {
+    padding: 40px 0;
+  }
+
+  .feedback__block {
+    width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    padding: 40px 0;
+  }
+  .footer .terms {
+    font-size: 12px;
+    font-weight: light;
+  }
+}
