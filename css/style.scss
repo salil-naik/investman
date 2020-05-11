@@ -45,6 +45,10 @@ h2{
     position:fixed; top:0; left:0; width:100%;
     z-index: 10;
 
+    &__menu{
+        display:none;
+    }
+
     .logo{
         margin-top:17px;
         height: 46px;
@@ -477,8 +481,40 @@ h2{
     }
     h2{font-size:25px;}
     .nav{
+        background-color:white;
+        padding: 0 20px;
+        &__menu{
+            display:block;
+            width:30px; height:30px;
+            position:absolute;
+            top:25px; right:20px;
+            cursor:pointer;
+        }
         &__list-container{
+            // height:calc(100vh - 70px); 
             display:none;
+            width:100vw; 
+            position:absolute;
+            left:0; 
+            top:70px; 
+            background-color:white;
+            padding:40px 20px;
+            z-index:4;
+            flex-direction:column;
+            justify-content: flex-start;
+            box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-container{
+            padding-left:0; padding-right:0;
+        }
+
+        &__list-item{
+            line-height:30px;
+        }
+
+        .button{
+            margin-left:0; width:100px; text-align: center;
         }
     }
 
@@ -550,5 +586,9 @@ h2{
             margin:20px auto 0 auto;
             display: block;
         }
+    }
+
+    .wa-button{
+        bottom:20px; right:20px;
     }
 }

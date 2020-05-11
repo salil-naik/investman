@@ -19,6 +19,7 @@
         <div class="grid-x grid-margin-x">
           <div class="cell large-3">
             <img src="images/logo.png" alt="InvestMan logo" class="logo" />
+            <svg onclick="openMenu()" class="nav__menu" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><path d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"/></svg>
           </div>
           <div class="cell large-9">
             <ul class="nav__list-container">
@@ -246,23 +247,8 @@
             </div>
             <div class="cell large-8">
               <h2 class="story__title">Our Story</h2>
-              <p class="story__text">
-                InvestMan-Financial Solutions was established with an objective
-                of improving the financial health of our clients by enabling
-                wealth creation through quality and ethical advice.
-              </p>
-              <p class="story__text">
-                InvestMan- Financial Solutions was established with an objective
-                of improving financial health of our society through quality and
-                ethical advice.According to us, creating a financial plan helps
-                you understand the bigger picture as a responsible family member
-                and enables you to set your priorities right when it comes to
-                your investments.Walking with you through the journey of life we
-                help you set your financial goals and
-                allocate,monitor,rebalance,restructure your investments across
-                different asset classes keeping in mind your requirements and
-                limitations according to the life stage you are in.
-              </p>
+              <p class="story__text">InvestMan-Financial Solutions was established with an objective of improving the financial health of our clients by enabling wealth creation through quality and ethical advice.</p>
+              <p class="story__text">InvestMan- Financial Solutions was established with an objective of improving financial health of our society through quality and ethical advice. According to us, creating a financial plan helps you understand the bigger picture as a responsible family member and enables you to set your priorities right when it comes to your investments. Walking with you through the journey of life we help you set your financial goals and allocate, monitor, rebalance, restructure your investments across different asset classes keeping in mind your requirements and limitations according to the life stage you are in.</p>
             </div>
           </div>
         </div>
@@ -353,6 +339,7 @@
                       name="email"
                       class="form__input"
                       placeholder="hello@salilnaik.com"
+                      required
                     />
                     <button type="submit" class="form__button">
                       Subscribe
@@ -372,6 +359,7 @@
                         name="user_name"
                         id=""
                         class="form__input"
+                        required
                       />
                     </div>
 
@@ -382,12 +370,13 @@
                         name="user_phone"
                         id=""
                         class="form__input"
+                        required
                       />
                     </div>
 
                     <div class="input-container">
                       <label for="user_comment">Comments</label>
-                      <textarea name="user_comment"
+                      <textarea name="user_comment" required
                         class="form__input form__input--textarea"
                       ></textarea>
                     </div>
@@ -562,6 +551,17 @@
           pauseOnFocus: false,
         });
       });
+
+      function openMenu(){
+        let menu = document.getElementsByClassName('nav__list-container')[0];
+        let display = menu.style.display;
+        if(display == 'block'){
+          menu.style.display = 'none'
+        }
+        else{
+          menu.style.display = 'block'
+        }
+      }
     </script>
   </body>
 </html>
